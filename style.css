@@ -1,4 +1,26 @@
+.noto-serif-bold{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.noto-serif-regular{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 /* Header Style */
 .nav-section {
@@ -49,4 +71,38 @@
 #cart {
     color: #000000;
     font-weight: 500;
+}
+
+/* Hero Section Styles */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  color: #7A7C80;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.orange {
+    color: #E95A08;
+}
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
 }
