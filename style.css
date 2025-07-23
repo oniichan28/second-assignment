@@ -178,3 +178,72 @@
 .plant-card button:hover {
   background-color: #d94f05;
 }
+/* Plant Section Styles */
+
+.plant-lover-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 30px;
+  background-color: #fff;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.img-wrapper img.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-wrapper img.badge {
+  position: absolute;
+  top: -80px;
+  right: -55px;
+  width: 180px; 
+  height: auto;
+}
+.badge:hover {
+  animation: rotateBadge 2s linear infinite;
+}
+.plant-details {
+  max-width: 500px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.plant-title h3 {
+  font-size: 2rem;
+  color: #252432;
+  margin-bottom: 20px;
+}
+
+.plant-description ul {
+  padding-left: 10px;
+  margin: 0;
+}
+
+.plant-description li {
+  margin-bottom: 15px;
+  color: #7A7C80;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* Badge Animation*/
+@keyframes rotateBadge {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); 
+  }
+}
