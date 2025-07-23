@@ -22,7 +22,6 @@
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    color: black;
     font-weight: 500;
     font-size: 16px;
     padding: 5px;
@@ -32,4 +31,22 @@
     width: 50px;
     height: 42px;
     object-fit: contain;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -16px
+}
+#home {
+    color: #252432;
+    font-weight: bold;
+}
+
+.grey {
+    color: #91909f;
+    font-weight: regular;
+}
+#cart {
+    color: #000000;
+    font-weight: 500;
 }
