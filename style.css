@@ -288,7 +288,7 @@ body {
 .deals-large {
   flex: 2;
   min-width: 300px;
-  position: relative; /* ✅ এই লাইনটাই যুক্ত করো */
+  position: relative;
 }
 
 .deals-small {
@@ -583,7 +583,6 @@ text-align: left;
 .newsletter {
     padding: 50px 15px;
     box-sizing: border-box;
-    overflow: hidden;
   }
 
   .newsletter-form {
@@ -594,15 +593,10 @@ text-align: left;
   }
 
   .newsletter-form input[type="email"] {
-    flex: 1;
-    padding: 12px;
-    font-size: 1rem;
-    border: none;
-     width: auto;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+   width: 100%;
+   padding: 10px;
+   box-sizing: border-box;
   }
-
   .newsletter-form button {
     padding: 12px 16px;
     font-size: 1rem;
