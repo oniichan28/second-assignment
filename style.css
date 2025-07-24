@@ -39,6 +39,8 @@ body {
     display: flex;
     align-items: center;
     gap: 25px;
+    justify-content: space-between;
+    padding: 20px 30px;
 }
 .navbar a {
     display: flex;
@@ -142,10 +144,10 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: none
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
 }
 
 .plant-card img {
@@ -163,6 +165,7 @@ body {
 
 .plant-card strong {
   margin-bottom: 10px;
+  display: block;
 
 }
 
@@ -435,4 +438,163 @@ cursor: pointer;
   to {
     transform: rotate(360deg); 
   }
+}
+
+
+/* Responsive Section */ 
+
+@media (max-width: 430px) {
+  
+
+  /* Navbar Responsive*/
+  .nav-section {
+    padding: 15px 20px;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  #cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+  .nav-logo img {
+    width: 100px;
+    height: auto;
+  }
+
+/* Hero section responsive */
+
+.hero-section {
+flex-direction: column-reverse;
+padding: 20px;
+text-align: left;
+}
+.hero-text {
+  max-width: 100%;
+  margin-top: 20px;
+}
+.hero-text h1 {
+  font-size: 2rem;
+}
+.hero-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.hero-img img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* Plant section Responsive */
+
+.plant-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.plants h2 {
+  font-size: 2rem;
+}
+.plants p {
+  font-size: 0.9rem;
+}
+
+/* Plant Lover Section Responsive */
+
+.plant-lover-section {
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+.img-wrapper {
+  width: 100%;
+  max-width: 300px;
+}
+.badge {
+  display: none;
+}
+.plant-details {
+  max-width: 100%;
+  text-align: left;
+}
+.plant-title h3 {
+  font-size: 1.5rem;
+}
+.plant-description ul {
+  padding-left: 0;
+}
+.plant-description li {
+  font-size: 0.9rem;
+}
+
+/* Deals section Responsive */
+
+.deals-container {
+  flex-direction: column;
+  gap: 20px;
+}
+.deals-left {
+  max-width: 100%;
+  height: auto;
+}
+.deals-large img {
+  width: 100%;
+  height: auto;
+}
+.deals-small img {
+  height: auto;
+}
+.deal-content h3 {
+  font-size: 1.125rem;
+}
+.deals-large .deal-content {
+  font-size: 1.75rem;
+}
+.deal-content a {
+  font-size: 1rem;
+}
+.deals-large .deal-content a {
+  font-size: 1.25rem;
+}
+
+/* Newsleeter Section Responsive */
+
+.newsletter {
+  padding: 50px 15px;
+  background-size: cover;
+}
+.newsletter h2 {
+  font-size: 1.25rem;
+}
+
+/* Footer Section Responsive */
+
+.footer-section {
+  flex-direction: column;
+  padding: 40px 20px;
+  text-align: left;
+}
+.footer-left {
+  max-width: 100%;
+}
+.footer-links {
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+}
+.footer-social {
+  justify-content: left;
+}
+
 }
