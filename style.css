@@ -41,6 +41,7 @@ body {
     gap: 25px;
     justify-content: space-between;
     padding: 20px 30px;
+    background-color: #f5f8fe;
 }
 .navbar a {
     display: flex;
@@ -143,7 +144,7 @@ body {
   background: #ffffff;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: none
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,6 +394,7 @@ cursor: pointer;
   padding: 60px 80px;
   flex-wrap: wrap;
   gap: 30px;
+  background-color: #f5f8fe;
 }
 .footer-left {
   max-width: 250px;
@@ -623,13 +625,21 @@ text-align: left;
 .footer-left {
   max-width: 100%;
 }
-.footer-links {
-  flex-direction: column;
-  justify-content: left;
-  gap: 20px;
+.footer-logo {
+  width: 200px;
 }
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.footer-links li {
+  margin-bottom: 40px;
+}
+
 .footer-social {
-  justify-content: left;
+  justify-content: flex-start;
 }
 
 }
