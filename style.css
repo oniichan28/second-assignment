@@ -250,6 +250,9 @@ body {
 .deals-section {
   text-align: center;
   padding: 60px 30px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .deals-header h2 {
@@ -283,13 +286,14 @@ body {
   gap: 20px;
   flex: 1;
   max-width: 300px;
-  height: 425px;
+  height: auto;
 }
 
 .deals-large {
   flex: 2;
   min-width: 300px;
   position: relative;
+  overflow: hidden;
 }
 
 .deals-small {
@@ -307,8 +311,8 @@ body {
   display: block;
 }
 .deals-large img {
-  width: 750px;
-  height: 425px;
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
   border-radius: 15px;
@@ -452,8 +456,8 @@ cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
-  width: 750px;
-  height: 425px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.3); /* হালকা কালো শেড */
   z-index: 1;
   pointer-events: none;
