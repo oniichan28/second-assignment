@@ -468,7 +468,7 @@ cursor: pointer;
   overflow-x: hidden; /* horizontal scroll বন্ধ */
 }
 .navbar {
-  background-color: #f5f8fe;
+  background-color: white;
 }
 
   /* Navbar Responsive*/
@@ -668,6 +668,6 @@ text-align: left;
   justify-content: flex-start;
 }
 footer {
-  background-color: #f5f8fe;
+  background-color: white;
 }
 }
